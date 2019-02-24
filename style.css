@@ -1,24 +1,43 @@
+body {
+    display: block;
+}
+
+main {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+#container {
+    align: center;
+    margin: auto;
+    width: 61%;
+}
+
+#erase {
+    margin-bottom: 10px;
+}
+
 #gameBoard {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
     width: 800px;
     height: 800px;
     border: 2px solid black;
 }
 
 .squareBox{
-    display: inline-block;
-    border: 1px solid black;
-    width: 48px;
+    flex-grow: 1;
     height: 48px;
-    margin: 0;
-    padding: 0;
-}
-
-div div{
-    height: 50px;
-    margin: 0;
-    padding: 0;
+    width: 48px;
+    border: 1px solid black;
 }
 
 .hovered {
     background-color: black;
 }
+
